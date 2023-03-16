@@ -1,0 +1,23 @@
+.form-container{
+    display: flex;
+    justify-content: center;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    height: 85vh;
+}
+.address{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+/* .form-button{
+    margin-top: 20px;
+} */
+.dropDepartment{
+    width: 100%;
+}
