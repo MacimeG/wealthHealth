@@ -6,44 +6,6 @@ import MaterialReactTable from 'material-react-table';
 import {useSelector} from 'react-redux'
 
 
-const testData = [
-    {
-      name: {
-        firstName: 'Jane',
-        lastName: 'Doe',
-      },
-      address: '769 Dominic Grove',
-      city: 'Columbus',
-      state: 'Ohio',
-    },
-    {
-      name: {
-        firstName: 'Joe',
-        lastName: 'Doe',
-      },
-      address: '566 Brakus Inlet',
-      city: 'South Linda',
-      state: 'West Virginia',
-    },
-    {
-      name: {
-        firstName: 'Kevin',
-        lastName: 'Vandy',
-      },
-      address: '722 Emie Stream',
-      city: 'Lincoln',
-      state: 'Nebraska',
-    },
-    {
-      name: {
-        firstName: 'Joshua',
-        lastName: 'Rolluffs',
-      },
-      address: '32188 Larkin Turnpike',
-      city: 'Charleston',
-      state: 'South Carolina',
-    },
-];
 export const EmployeeList = () => {
 
     const stateEmployee = useSelector((state) => state.employees)
@@ -89,7 +51,7 @@ export const EmployeeList = () => {
         },
 
       ],
-      [stateEmployee],
+      [],
     );
   
     return(

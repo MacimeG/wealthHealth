@@ -4,7 +4,7 @@ export function Modal(props){
     // ecrire la fonction modal
     return(
         <div className="modal">
-            <p>Employee Created ! </p>
+            <p>{props.message} </p>
             <button onClick={props.close} className="close-button">Close</button>
         </div>
     )

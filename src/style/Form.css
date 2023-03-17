@@ -12,12 +12,24 @@
 .address{
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    width: 100%;
+    height: 50%;
+    justify-content: space-evenly;
 
 }
-/* .form-button{
-    margin-top: 20px;
-} */
+
 .dropDepartment{
     width: 100%;
+}
+input{
+    width: 95%;
+    border-radius: 3px;
+    border: 1px solid;
+    margin-bottom: 20px;
+}
+.form-button{
+    margin-top: 15px;
+}
+.labelDepartment{
+    margin-top: 15px;
 }

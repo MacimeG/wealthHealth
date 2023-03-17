@@ -82,11 +82,11 @@ export function Form(){
                     <label htmlFor="zip-code">Zip Code</label>
                     <input id="zip-code" type="number" onChange={(e) => setZipCode(e.target.value)} />
                 </fieldset>
-                <label htmlFor="department">Department</label>
+                <label htmlFor="department" className="labelDepartment">Department</label>
                 <Dropdown className="dropDepartment" options={selectDepart}  placeholder="Select an option" onChange={(e) => setDepartment(e.value)}/>
             <button className="form-button">Save</button>
             </form>
-            {save === true ? <Modal close={closeModal} /> : null}
+            {save === true ? <Modal close={closeModal} message={"employee created"} /> : null}
         </div>
     )
 }
