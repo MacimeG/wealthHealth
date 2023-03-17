@@ -213,26 +213,26 @@ export const states = [
     },
     {
         value: "Virgin Islands",
-        value: "VI"
+        label: "VI"
     },
     {
         value: "Virginia",
-        value: "VA"
+        label: "VA"
     },
     {
         value: "Washington",
-        value: "WA"
+        label: "WA"
     },
     {
         value: "West Virginia",
-        value: "WV"
+        label: "WV"
     },
     {
         value: "Wisconsin",
-        value: "WI"
+        label: "WI"
     },
     {
         value: "Wyoming",
-        value: "WY"
+        label: "WY"
     }
 ];
