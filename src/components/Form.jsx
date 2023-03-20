@@ -6,7 +6,7 @@ import '../style/Form.css'
 import 'react-dropdown/style.css';
 import {states} from "../data/state.js"
 import { department } from "../data/department";
-import { Modal } from "./Modal";
+import { Modal } from "max-modal-component";
 import { useDispatch} from 'react-redux'
 import { RESPONSEDATA, store } from "../store";
 

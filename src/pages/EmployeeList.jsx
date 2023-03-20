@@ -4,7 +4,7 @@ import React, { useMemo } from 'react';
 import MaterialReactTable from 'material-react-table';
 
 import {useSelector} from 'react-redux'
-
+import '../style/EmployeeList.css'
 
 export const EmployeeList = () => {
 
