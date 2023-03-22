@@ -1,4 +1,33 @@
 .employeeList_container{
+    height: 100vh;
+}
+
+.employeeListNav{
+    background-color: rgb(196, 196, 221);
+    height: 8vh;
+    margin-top: -20px;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.linkHome{
+    text-decoration: none;
+    color: black;
+    padding-right: 10px;
+}
+.employeeNavTitle{
+    padding-left: 10px;
+}
+
+.no-data{
+    position: absolute;
+    top: 100px;
+    left: 10px;
+}
+.table-content{
     width: 90%;
-    margin: auto;
+    margin-left: 4.5%;
+    margin-top: 4%;
 }

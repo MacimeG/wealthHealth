@@ -5,31 +5,110 @@
 .form {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     justify-content: space-around;
     height: 85vh;
 }
 .address{
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 85%;
     height: 50%;
     justify-content: space-evenly;
 
 }
 
 .dropDepartment{
-    width: 100%;
+    width: 80%;
 }
 input{
-    width: 95%;
+    /* width: 95%; */
     border-radius: 3px;
-    border: 1px solid;
+    border: 1px solid #ccc;
     margin-bottom: 20px;
 }
 .form-button{
     margin-top: 15px;
+    width: 50%;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 0px;
+    background-color: rgb(196, 196, 221);
+    height: 4vh;
 }
 .labelDepartment{
     margin-top: 15px;
+}
+.date-container{
+    display: flex;
+    flex-direction: row;
+}
+.birthDate{
+    margin-left: 7%;
+}
+.startDate{
+    margin-left: 7%;
+}
+.name-container{
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-between;
+    width: 85%;
+}
+.firstname-input{
+    display: flex;
+    flex-direction: column;
+}
+.lastname-input{
+    display: flex;
+    flex-direction: column;
+}
+.adress-container{
+    /* display: flex;
+    justify-content: space-between; */
+    display: flex;
+    justify-content: space-between;
+    /* flex-direction: column; */
+    align-items: baseline;
+}
+.street-container{
+    display: flex;
+    flex-direction: column;
+}
+.city-container{
+    display: flex;
+    flex-direction: column;
+}
+label{
+    margin-bottom: 5px;
+}
+
+.stateLabel{
+    margin-bottom: -15px;
+}
+.zipLabel{
+    margin-bottom: -15px;
+}
+#zip-code{
+    margin: 0;
+}
+
+.modal{
+    background-color: rgb(196, 196, 221) !important;
+    left: 38% !important;
+}
+.modal p{
+    text-align: center;
+}
+.modal button{
+    background: white !important;
+    border-radius: 5px !important;
+    height: 3vh !important;
+    width: 6vw !important;
+    border: 1px solid #ccc !important;
+}
+@media screen and (max-width: 662px) {
+    .modal button{
+        width: 15vw !important;
+    }
 }

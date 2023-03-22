@@ -9,7 +9,6 @@ import '../style/EmployeeList.css'
 export const EmployeeList = () => {
 
     const stateEmployee = useSelector((state) => state.employees)
-    console.log(stateEmployee);
     //should be memoized or stable
     const columns = useMemo(
       () => [
@@ -56,9 +55,21 @@ export const EmployeeList = () => {
   
     return(
         <div className='employeeList_container'>
-            <h1>Current Employee</h1>
-            <MaterialReactTable enableColumnFilters={false} enableFullScreenToggle={false} enableDensityToggle={false} columns={columns} data={stateEmployee}/>
+          <nav className='employeeListNav'>
+            <h1 className='employeeNavTitle'>Current Employee</h1>
             <Link className='linkHome' to="/">Home</Link>
+
+          </nav>
+            {stateEmployee.length === 1 ?(
+              <span className='no-data'>no data available in table, please create an employee </span>
+            ):(
+              <div className='table-content'>
+                <MaterialReactTable enableColumnFilters={false} enableFullScreenToggle={false} enableDensityToggle={false} columns={columns} data={stateEmployee}/>
+
+              </div>
+
+            )}
+            {/* <Link className='linkHome' to="/">Home</Link> */}
         </div> 
     )
   };  
