@@ -1,7 +1,8 @@
 import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import { Home } from './pages/Home';
+// import { EmployeeList } from './pages/Home';
 import './App.css';
+import { CreateEmployee } from './pages/CreateEmployee';
 import { EmployeeList } from './pages/EmployeeList';
 
 function App() {
@@ -9,7 +10,7 @@ function App() {
     <div>
       <BrowserRouter>
         <Routes>
-          <Route path='/' element={<Home/>}/>
+          <Route path='/' element={<CreateEmployee/>}/>
           <Route path='/EmployeeList' element={<EmployeeList/>}/>
         </Routes>
 
