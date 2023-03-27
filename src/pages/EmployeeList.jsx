@@ -56,7 +56,7 @@ export const EmployeeList = () => {
     return(
         <div className='employeeList_container'>
           <nav className='employeeListNav'>
-            <h1 className='employeeNavTitle'>Current Employee</h1>
+            <h1 className='employeeNavTitle'>HRnet</h1>
             <Link className='linkHome' to="/">Home</Link>
 
           </nav>
