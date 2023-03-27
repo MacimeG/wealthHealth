@@ -57,12 +57,12 @@ export function Form(){
 
                 <div className="firstname-input">
                 <label htmlFor="first-name">First Name</label>
-                <input type="text" id="first-name" onChange={(e) => setFirstName(e.target.value)} />
+                <input type="text" id="first-name" required onChange={(e) => setFirstName(e.target.value)} />
                 </div>
 
                 <div className="lastname-input">
                 <label htmlFor="last-name">Last Name</label>
-                <input type="text" id="last-name" onChange={(e) => setLastName(e.target.value)} />
+                <input type="text" id="last-name" required  onChange={(e) => setLastName(e.target.value)} />
                 </div>
                 </div>
 
@@ -71,11 +71,11 @@ export function Form(){
 
                 <div className="birthDate">
                 <label htmlFor="date-of-birth">Birth Date</label>
-                <DatePicker selected={birthDate} onChange={(date) => setBirthDate(date)} />
+                <DatePicker selected={birthDate} dateFormat="dd/MM/yyyy"  onChange={(date) => setBirthDate(date)} />
                 </div>
                 <div className="startDate">
                 <label htmlFor="start-date">Start Date</label>
-                <DatePicker selected={startDate} onChange={(date) => setStartDate(date)} />
+                <DatePicker selected={startDate} dateFormat="dd/MM/yyyy"  onChange={(date) => setStartDate(date)} />
 
                 </div>
                 </div>
@@ -86,22 +86,22 @@ export function Form(){
                     <div className="adress-container">
                     <div className="street-container">
                     <label htmlFor="street">Street</label>
-                    <input id="street" type="text" onChange={(e) => setStreet(e.target.value)} />
+                    <input id="street" type="text" required  onChange={(e) => setStreet(e.target.value)} />
                     </div>
                     <div className="city-container">
                     <label htmlFor="city">City</label>
-                    <input id="city" type="text" onChange={(e) => setCity(e.target.value)} />
+                    <input id="city" type="text" required  onChange={(e) => setCity(e.target.value)} />
                     </div>
                     </div>
 
                     <label className="stateLabel" htmlFor="state">State</label>
-                    <Dropdown options={selectState} placeholder="Select a state" onChange={(e) => setState(e.value)}/>
+                    <Dropdown options={selectState} required placeholder="Select a state" onChange={(e) => setState(e.value)}/>
 
                     <label className="zipLabel" htmlFor="zip-code">Zip Code</label>
-                    <input id="zip-code" type="number" onChange={(e) => setZipCode(e.target.value)} />
+                    <input id="zip-code" type="number" required onChange={(e) => setZipCode(e.target.value)} />
                 </fieldset>
                 <label htmlFor="department" className="labelDepartment">Department</label>
-                <Dropdown className="dropDepartment" options={selectDepart}  placeholder="Select a department" onChange={(e) => setDepartment(e.value)}/>
+                <Dropdown className="dropDepartment" options={selectDepart} required placeholder="Select a department" onChange={(e) => setDepartment(e.value)}/>
             <button className="form-button">Save</button>
             </form>
             {save === true ? <Modal close={closeModal} message={"employee created"} /> : null}
