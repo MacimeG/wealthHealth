@@ -101,7 +101,7 @@ export function Form(){
                     <input id="zip-code" type="number" required onChange={(e) => setZipCode(e.target.value)} />
                 </fieldset>
                 <label htmlFor="department" className="labelDepartment">Department</label>
-                <Dropdown className="dropDepartment" options={selectDepart} required placeholder="Select a department" onChange={(e) => setDepartment(e.value)}/>
+                <Dropdown className="dropDepartment" options={selectDepart} placeholder="Select a department" onChange={(e) => setDepartment(e.value)}/>
             <button className="form-button">Save</button>
             </form>
             {save === true ? <Modal close={closeModal} message={"employee created"} /> : null}
