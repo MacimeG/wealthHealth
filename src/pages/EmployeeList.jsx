@@ -60,6 +60,7 @@ export const EmployeeList = () => {
             <Link className='linkHome' to="/">Home</Link>
 
           </nav>
+              <h2>Employee List</h2>
             {stateEmployee.length === 1 ?(
               <span className='no-data'>no data available in table, please create an employee </span>
             ):(
