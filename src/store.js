@@ -28,7 +28,6 @@ function reducer(state= initialState, action){
     if(action.type === "RESPONSEDATA"){
         return{
             ...state,
-            // employees: action.payload.employees,
             ...state.employees.push(action.payload)
 
         }
