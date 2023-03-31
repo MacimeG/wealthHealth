@@ -5,17 +5,17 @@ import { composeWithDevTools } from 'redux-devtools-extension';
 const initialState = {
     // finir de faire le state
     employees:[
-        {
-            firstName: '',
-            lastName: '',
-            birthDate:'',
-            startDate:'',
-            street:'',
-            city:'',
-            state:'',
-            zipCode:'',
-            departments:''
-        }
+        // {
+        //     firstName: '',
+        //     lastName: '',
+        //     birthDate:'',
+        //     startDate:'',
+        //     street:'',
+        //     city:'',
+        //     state:'',
+        //     zipCode:'',
+        //     departments:''
+        // }
     ]
 }
 // mon action

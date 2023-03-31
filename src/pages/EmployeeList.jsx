@@ -61,7 +61,7 @@ export const EmployeeList = () => {
 
           </nav>
               <h2>Employee List</h2>
-            {stateEmployee.length === 1 ?(
+            {stateEmployee.length === 0 ?(
               <span className='no-data'>no data available in table, please create an employee </span>
             ):(
               <div className='table-content'>
