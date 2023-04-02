@@ -70,7 +70,6 @@ export const EmployeeList = () => {
               </div>
 
             )}
-            {/* <Link className='linkHome' to="/">Home</Link> */}
         </div> 
     )
   };  

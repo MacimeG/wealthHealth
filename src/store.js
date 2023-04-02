@@ -4,19 +4,7 @@ import { composeWithDevTools } from 'redux-devtools-extension';
 // le state initial
 const initialState = {
     // finir de faire le state
-    employees:[
-        // {
-        //     firstName: '',
-        //     lastName: '',
-        //     birthDate:'',
-        //     startDate:'',
-        //     street:'',
-        //     city:'',
-        //     state:'',
-        //     zipCode:'',
-        //     departments:''
-        // }
-    ]
+    employees:[]
 }
 // mon action
 export const RESPONSEDATA = (employees)=> ({
